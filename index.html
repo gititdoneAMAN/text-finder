@@ -7,12 +7,32 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="input-area">
-        <input type="text" placeholder="To Find" />
-        <button>Find</button>
-      </div>
-      <div class="text-area"></div>
+    <!-- Overlay for input paragraph -->
+
+    <div class="overlay">
+      <textarea
+        id="textarea"
+        placeholder="Enter the Paragraph to search from."
+      ></textarea>
+      <button class="btn" onclick="overlay()">Done</button>
     </div>
+
+    <!-- Main searching area -->
+
+    <div class="container">
+      <div class="wrapper">
+        <input type="text" id="text-to-search" />
+        <button onclick="search()">Search</button>
+      </div>
+      <p id="paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nisi
+        veniam earum. Harum quam tempore quasi modi dolor optio quod sed
+        suscipit tempora non, temporibus, odio, at natus accusamus. Alias, culpa
+        magni? Sint inventore officiis quasi sit perspiciatis, ullam
+        voluptatibus ipsa fugiat mollitia. Nostrum reprehenderit accusantium
+        cumque iste voluptas officiis!
+      </p>
+    </div>
+    <script src="./script.js"></script>
   </body>
 </html>

@@ -1,5 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  height: 100%;
+  background: linear-gradient(90deg, #201d2e 50%, #f6f6f6 50%) fixed;
+}
+
+.container {
+  width: 90vmin;
+  background-color: #fff;
+  padding: 50px 40px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 5px;
+  box-shadow: 0 20px 35px rgba(60, 60, 60, 0.5);
+  z-index: -1;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper input {
+  width: 60%;
+  padding: 10px 7px;
+  border-radius: 3px;
+  border: 1px solid #201d2e;
+}
+
+.wrapper button {
+  width: 30%;
+  background-color: #201d2e;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #ffffff;
+  border-radius: 3px;
+}
+
+.container p {
+  line-height: 35px;
+  text-align: justify;
+  margin-top: 30px;
+}
+
+.overlay {
+  background: linear-gradient(360deg, #201d2e 50%, #f6f6f6 50%) fixed;
+  height: 100vh;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.overlay textarea {
+  width: 80%;
+  height: 60%;
+  font-family: "Rubik", sans-serif;
+  padding: 10px 10px;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.btn {
+  margin: 30px 30px;
+  background-color: #201d2e;
+  width: 30%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  border: 5px solid white;
+  padding: 5px;
+}
+
+.btn:hover {
+  background-color: #201d2e;
+  color: red;
+}
+.disappear {
+  display: none;
+  z-index: -1000000;
 }
