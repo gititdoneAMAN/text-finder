@@ -7,6 +7,7 @@ function search() {
     pattern,
     (match) => `<mark>${match}</mark>`
   );
+  document.getElementById("text-to-search").value = "";
 }
 
 function overlay() {
@@ -16,3 +17,7 @@ function overlay() {
   paragraph.innerHTML = data;
   shade[0].classList.add("disappear");
 }
+
+document.getElementById("paragraph").addEventListener("click", function () {
+  document.getElementsByClassName("overlay")[0].classList.remove("disappear");
+});
